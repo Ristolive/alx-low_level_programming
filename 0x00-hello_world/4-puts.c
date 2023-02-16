@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * main- This is the main function
- * return: value 0
+ * Return: Value return should 0
  */
-
-int main()
+int main(void)
 {
-    puts("/"Programming is like building a multilingual puzzle");
+char alx[] = "\"Programming is like building a multilingual puzzle";
 
-    return 0;
+puts(alx);
+return (0);
 }
