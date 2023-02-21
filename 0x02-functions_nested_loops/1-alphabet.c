@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * print_alphabet - utilizes on the _putchar function to print
@@ -7,9 +7,20 @@
 
 void print_alphabet(void)
 {
-	int ch;
-
-	for (ch = 'a'; ch <= 'z'; ++ch)
-		_putchar(ch);
-	_putchar('\n');
+    int _putchar(int c)
+{
+    return putchar(c);
 }
+    char c;
+    for (c = 'a'; c <= 'z'; c++) {
+        _putchar(c);
+    }
+    _putchar('\n');
+}
+
+int main(void)
+{
+    print_alphabet();
+    return 0;
+}
+
