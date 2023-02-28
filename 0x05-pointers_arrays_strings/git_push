@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Add all the files in the current directory to the Git index
+
+git add .
+
+read -p 'Commit message:' message
+git commit -m $message
+
+
+# Push the changes to the remote repository
+
+git push origin master
